@@ -10,7 +10,7 @@ import (
 )
 
 func ProcessClientHandler(w http.ResponseWriter, r *http.Request) {
-	log.Println("Process Ermetic client request was received. Starting...")
+	log.Println("Process time frames client request was received. Starting...")
 	clientIdStr := r.URL.Query().Get("clientId")
 	if clientIdStr == "" {
 		errMsg := "Failed source argument 'clientId'"
